@@ -1,0 +1,28 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/some_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    >
+
+    <View
+        android:id="@+id/some"
+        android:layout_width="215dp"
+        android:layout_height="216dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/smse" />
+
+    <View
+        android:id="@+id/roding"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="173dp"
+        android:layout_marginTop="430dp"
+        android:background="@drawable/roding" />
+</RelativeLayout>
