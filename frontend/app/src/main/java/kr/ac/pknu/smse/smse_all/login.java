@@ -13,10 +13,11 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        id = (EditText) findViewById(R.id.edittext3);
-        pw = (EditText) findViewById(R.id.edittext4);
-        system.out.println(id);
-        system.out.println(pw);
+
+        //입력받은 아이디와 비밀번호를 변수에 저장
+        inputId = (EditText) findViewById(R.id.edittext3);
+        inputPw = (EditText) findViewById(R.id.edittext4);
+        
     final ImageButton signup1 =(ImageButton)findViewById(R.id.imagebutton3);
         signup1.setOnClickListener(new View.OnClickListener() {
 

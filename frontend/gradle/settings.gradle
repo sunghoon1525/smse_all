@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "smse_all"
-include ':app'
+include ":apps"
