@@ -1,4 +1,4 @@
-package kr.ac.pknu.smse.smse_all;
+package com.example.smse;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
