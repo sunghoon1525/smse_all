@@ -34,13 +34,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".club_manage_main"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".MainActivity"
             android:exported="false">
             <meta-data
@@ -113,13 +106,7 @@
             android:name=".mypage_information"
             android:exported="false" />
         <activity
-            android:name=".mypage_main"
-            android:exported="false" />
-        <activity
             android:name=".write_main"
-            android:exported="false" />
-        <activity
-            android:name=".channel_main"
             android:exported="false" />
         <activity
             android:name=".channel_notice"
