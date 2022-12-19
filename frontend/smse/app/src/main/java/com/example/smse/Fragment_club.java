@@ -1,5 +1,6 @@
 package com.example.smse;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,8 +61,34 @@ public class Fragment_club extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         ViewGroup rootView = (ViewGroup)inflater.inflate(R.layout.fragment_club, container, false);
+
+        ImageButton plus_fragment_club =(ImageButton) rootView.findViewById(R.id.plus_fragment_club);
+        plus_fragment_club.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), club_plus.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button cs =(Button) rootView.findViewById(R.id.cs);
+        cs.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), club_manage.class);
+
+                startActivity(intent);
+            }
+        });
+
+
+
+        // Inflate the layout for this fragment
 
         return rootView;
     }
