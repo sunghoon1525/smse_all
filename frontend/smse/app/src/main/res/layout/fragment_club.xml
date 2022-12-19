@@ -20,7 +20,7 @@
 
 
     <ImageButton
-        android:id="@+id/plus_write"
+        android:id="@+id/plus_fragment_club"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -60,10 +60,11 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:layout_height="50dp">
         </View>
 
         <Button
+            android:id="@+id/cs"
             android:layout_width="350dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
