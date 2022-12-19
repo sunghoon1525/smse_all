@@ -13,6 +13,20 @@
         android:theme="@style/Theme.Smse"
         tools:targetApi="31">
         <activity
+            android:name=".club_plus"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".club_manage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".mypage_authority"
             android:exported="false">
             <meta-data
