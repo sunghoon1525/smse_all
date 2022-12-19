@@ -21,23 +21,22 @@
     </ImageButton>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="49dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_gravity="center"
-        android:layout_marginLeft="189dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal|center_vertical"
         android:text="동아리"
-        android:textSize="20dp">
-    </TextView>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="156dp"
+        android:layout_marginLeft="138dp"
         android:layout_marginTop="18dp"
         android:src="@drawable/club">
     </ImageView>

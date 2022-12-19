@@ -20,23 +20,22 @@
     </ImageButton>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="49dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_gravity="center"
-        android:layout_marginLeft="189dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal|center_vertical"
         android:text="공지"
-        android:textSize="20dp">
-    </TextView>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="156dp"
+        android:layout_marginLeft="142dp"
         android:layout_marginTop="18dp"
         android:src="@drawable/notice">
     </ImageView>
@@ -52,6 +51,7 @@
         </View>
 
         <TextView
+            android:id="@+id/dateandtime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -100,6 +100,7 @@
             </View>
 
             <TextView
+                android:id="@+id/noticetitle"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="중간고사 응원전"
@@ -120,6 +121,7 @@
             </View>
 
             <TextView
+                android:id="@+id/noticecontent"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="12월 16일 6시 가온관 앞"

@@ -35,5 +35,16 @@ public class findidsuccess extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        final Button btn_success_password = (Button) findViewById(R.id.btn_success_password);
+        btn_success_password.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(findidsuccess.this, findpassword.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

@@ -11,19 +11,22 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="19dp"
-        android:layout_marginTop="13dp"
-        android:background="@drawable/back"></ImageButton>
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/white"
+        android:src="@drawable/back">
+    </ImageButton>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="49dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="170dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal|center_vertical"
         android:text="회원가입"
-        android:textSize="20dp"></TextView>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:text="아이디"
@@ -136,7 +139,7 @@
     </EditText>
 
     <TextView
-        android:text="학년 (선택)"
+        android:text="생일 (선택)"
         android:layout_width="332dp"
         android:layout_height="65dp"
         android:layout_alignParentLeft="true"
