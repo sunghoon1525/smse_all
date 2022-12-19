@@ -8,6 +8,27 @@
     tools:context=".channel_main">
 
     <TextView
+        android:id="@+id/tv_club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="179dp"
+        android:text="동아리"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sp_club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="177dp" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -111,33 +132,33 @@
         android:layout_marginTop="129dp"
         android:orientation="horizontal">
 
-        <RadioButton
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"
             android:layout_marginEnd="10dp">
-        </RadioButton>
+        </CheckBox>
 
-        <RadioButton
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2"
             android:layout_marginEnd="10dp">
-        </RadioButton>
+        </CheckBox>
 
-        <RadioButton
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3"
             android:layout_marginEnd="10dp">
-        </RadioButton>
+        </CheckBox>
 
-        <RadioButton
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
             android:layout_marginEnd="10dp">
-        </RadioButton>
+        </CheckBox>
 
     </RadioGroup>
 
@@ -225,17 +246,5 @@
         android:text="전송"
         android:backgroundTint="#71c7ec">
     </Button>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_menu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#e2e2e2"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_menu">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </RelativeLayout>

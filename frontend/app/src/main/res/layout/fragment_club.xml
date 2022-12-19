@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragement_club">
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="동아리/학생회 관리"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+    <ImageButton
+        android:id="@+id/plus_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:src="@drawable/plus"></ImageButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="내 소속 목록"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </View>
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#71c7ec">
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+        </View>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#71c7ec"
+            android:text="C.S'"
+            android:textStyle="bold"
+            android:textSize="30dp">
+        </Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+        </View>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#71c7ec"
+            android:text="프리허그"
+            android:textStyle="bold"
+            android:textSize="30dp">
+        </Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package kr.ac.pknu.smse.channel01;
+package com.example.smse;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,4 +1,4 @@
-package kr.ac.pknu.smse.channel01;
+package com.example.smse;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,6 +25,7 @@ public class findid extends AppCompatActivity {
             }
         });
 
+
         final Button btn =(Button) findViewById(R.id.btn_findid);
         btn.setOnClickListener(new View.OnClickListener() {
 
@@ -36,4 +37,5 @@ public class findid extends AppCompatActivity {
         });
 
     }
+
 }

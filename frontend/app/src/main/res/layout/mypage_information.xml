@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".channel_main">
+    tools:context=".mypage_information">
 
     <ImageButton
-        android:id="@+id/back_club"
+        android:id="@+id/back_information"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -95,33 +95,15 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <View
-                android:layout_width="120dp"
-                android:layout_height="match_parent">
-
-            </View>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3학년">
+                android:text="3학년"
+                android:gravity="center">
 
             </TextView>
 
-            <View
-                android:layout_width="10dp"
-                android:layout_height="match_parent">
-
-            </View>
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="70dp"
-                android:layout_height="35dp"
-                android:text="학년 수정"
-                android:textSize="8dp">
-
-            </Button>
 
         </LinearLayout>
 
@@ -181,18 +163,5 @@
     </LinearLayout>
 
 
-
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_menu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#e2e2e2"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_menu">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </RelativeLayout>

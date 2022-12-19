@@ -1,4 +1,4 @@
-package kr.ac.pknu.smse.channel01;
+package com.example.smse;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +20,7 @@ public class channel_club extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(channel_club.this, channel_main.class);
+                Intent intent = new Intent(channel_club.this, Fragment_channel.class);
                 startActivity(intent);
             }
         });

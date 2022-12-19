@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".channel_main">
+    tools:context=".Fragment_channel">
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,8 +16,7 @@
         android:layout_marginLeft="189dp"
         android:layout_marginTop="20dp"
         android:text="채널"
-        android:textSize="20dp">
-    </TextView>
+        android:textSize="20dp"></TextView>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -80,17 +79,5 @@
         android:textColor="@color/black"
         android:textSize="30dp">
     </Button>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_menu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#e2e2e2"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_menu">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package kr.ac.pknu.smse.channel01;
+package com.example.smse;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -50,7 +50,7 @@ public class login extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(login.this, channel_main.class);
+                Intent intent = new Intent(login.this, MainActivity.class);
                 startActivity(intent);
             }
         });
