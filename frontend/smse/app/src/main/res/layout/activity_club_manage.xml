@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".write_main">
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="아이디 찾기"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <ImageButton
+        android:id="@+id/back_club_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/white"
+        android:src="@drawable/back">
+    </ImageButton>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C.S'"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_gravity="center">
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#71c7ec">
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="#409ED1FF">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="신규 신청 (0건)"
+                android:gravity="center"
+                android:textStyle="bold">
+            </TextView>
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="match_parent">
+            </View>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#e2e2e2"
+                android:text="일괄반려"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_gravity="center">
+            </Button>
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#9ED1FF"
+                android:text="일괄승인"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_gravity="center">
+            </Button>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+        </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#409ED1FF">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="부원 관리 (3건)"
+            android:gravity="center"
+            android:textStyle="bold">
+        </TextView>
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="학년순"
+                android:background="#F3F3F3"
+                android:textSize="12dp"
+                android:gravity="center">
+            </TextView>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="이름순"
+                android:background="#F3F3F3"
+                android:textSize="12dp"
+                android:gravity="center">
+            </TextView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="3학년"
+                android:gravity="center"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="임지우"
+                android:gravity="center"
+                android:textStyle="bold">
+            </TextView>
+
+            <View
+                android:layout_width="170dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="부회장"
+                android:gravity="center">
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4">
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="2학년"
+                android:gravity="center"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="오아영"
+                android:gravity="center"
+                android:textStyle="bold">
+            </TextView>
+
+            <View
+                android:layout_width="170dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="부원"
+                android:gravity="center">
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4">
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="3학년"
+                android:gravity="center"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="김성훈"
+                android:gravity="center"
+                android:textStyle="bold">
+            </TextView>
+
+            <View
+                android:layout_width="170dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="부원"
+                android:gravity="center">
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
