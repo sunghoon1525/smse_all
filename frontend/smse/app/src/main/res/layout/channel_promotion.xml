@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".channel_promotion">
+
+    <ImageButton
+        android:id="@+id/back_promotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/white"
+        android:src="@drawable/back">
+    </ImageButton>
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="홍보"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/marketing">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        </View>
+
+        <TextView
+            android:id="@+id/promotion_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2022년 12월 20일 12:09">
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:id="@+id/promotion_sender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="김성훈(일반학생)"
+                android:textStyle="bold"
+                android:textSize="20dp">
+            </TextView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:id="@+id/promotion_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="겨울방학 스터디"
+                android:textSize="18dp"
+                android:background="#e2e2e2">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:id="@+id/promotion_content"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="겨울방학 스터디 모집합니다"
+                android:background="#e2e2e2">
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
