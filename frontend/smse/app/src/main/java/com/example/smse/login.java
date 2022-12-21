@@ -1,9 +1,9 @@
 package com.example.smse;
 
-import static kr.ac.pknu.smse.channel01.Server.checkServer;
-import static kr.ac.pknu.smse.channel01.Server.connect;
-import static kr.ac.pknu.smse.channel01.Server.resultFromServer;
-import static kr.ac.pknu.smse.channel01.Server.save;
+import static com.example.smse.Server.checkServer;
+import static com.example.smse.Server.connect;
+import static com.example.smse.Server.resultFromServer;
+import static com.example.smse.Server.save;
 
 import android.content.Intent;
 import android.os.Bundle;

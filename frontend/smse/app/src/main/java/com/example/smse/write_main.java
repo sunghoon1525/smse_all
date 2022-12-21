@@ -1,8 +1,8 @@
 package com.example.smse;
 
-import static kr.ac.pknu.smse.channel01.Server.checkServer;
-import static kr.ac.pknu.smse.channel01.Server.connect;
-import static kr.ac.pknu.smse.channel01.Server.save;
+import static com.example.smse.Server.checkServer;
+import static com.example.smse.Server.connect;
+import static com.example.smse.Server.save;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
