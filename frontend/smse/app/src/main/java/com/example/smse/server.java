@@ -13,17 +13,16 @@ import java.net.Socket;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-public class server extends AppCompatActivity {
+public class Server extends AppCompatActivity {
     // about socket
     private static Handler mHandler;
     private static Socket socket;
     private static DataOutputStream outstream;
-    private static DataInputStream instream;
     private static int port = 9999;
-    private static String resultFromServer;
-    private static boolean a;
+    public static String resultFromServer, a;
+    private static DataInputStream instream;
 
-    public static Boolean connect(String str) { // socket과 연결
+    public static void connect() { // socket과 연결
         mHandler = new Handler(Looper.getMainLooper());
         Log.w("connect", "연결 하는중");
         Thread checkUpdate = new Thread() {
@@ -45,29 +44,60 @@ public class server extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 Log.w("버퍼", "버퍼 생성 잘 됨");
+            }
+        };
+        checkUpdate.start();
+    }
+//    public static void checkServer(String str){
+//        mHandler = new Handler(Looper.getMainLooper());
+//        Thread sendServer = new Thread() {
+//            public void run(){
+//                try {
+//                    byte[] idBytes = str.getBytes();
+//                    ByteBuffer b1 = ByteBuffer.allocate(4);
+//                    b1.order(ByteOrder.LITTLE_ENDIAN);
+//                    b1.putInt(idBytes.length);
+//                    outstream.write(b1.array(), 0, 4);
+//                    outstream.write(idBytes);
+//                    // 결과 수신
+//                    byte[] data = new byte[1024];
+//                    int n = instream.read(data);
+//                    resultFromServer = new String(data, 0, n);
+//                    Log.i("", resultFromServer);
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        };
+//        sendServer.start();
+//        System.out.println("이것이 결과야?" +resultFromServer);
+//    };
+    public static void checkServer(String str){
+        mHandler = new Handler(Looper.getMainLooper());
+        Thread sendServer = new Thread() {
+            public void run(){
                 try {
-                    while (true) {
-                        byte[] idBytes = str.getBytes();
-                        ByteBuffer b1 = ByteBuffer.allocate(4);
-                        b1.order(ByteOrder.LITTLE_ENDIAN);
-                        b1.putInt(idBytes.length);
-                        outstream.write(b1.array(), 0, 4);
-                        outstream.write(idBytes);
-
-                        // 결과 수신
-                        byte[] data = new byte[16];
-                        int n = instream.read(data);
-                        resultFromServer = new String(data, 0, n);
-                        Log.i("서버에서 받은 결과 : ", resultFromServer);
-                        a = resultFromServer.equals("True");
-                        break;
-                    }
+                    byte[] idBytes = str.getBytes();
+                    ByteBuffer b1 = ByteBuffer.allocate(4);
+                    b1.order(ByteOrder.LITTLE_ENDIAN);
+                    b1.putInt(idBytes.length);
+                    outstream.write(b1.array(), 0, 4);
+                    outstream.write(idBytes);
+                    // 결과 수신
+                    byte[] data = new byte[1024];
+                    int n = instream.read(data);
+                    resultFromServer = new String(data, 0, n);
+                    System.out.println(data);
+                    Log.i("", resultFromServer);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         };
-        checkUpdate.start();
-        return a;
-    }
+        sendServer.start();
+        System.out.println("이것이 결과야?" +resultFromServer);
+    };
+    public static String save(){
+        return resultFromServer;
+    };
 }

@@ -1,8 +1,12 @@
-import db_connector
+import pymysql
+
+# MySQL Connection 연결
+conn = pymysql.connect(host='localhost', user='root', password='12345678', db='SMSE_ALL', charset='utf8')
+
+# Connection 으로부터 Cursor 생성
+curs = conn.cursor()
 
 def grade_change(name, grade, authority):
-    conn = db_connector.conn
-    curs = conn.cursor()
 
     user_id = "SELECT user_id FROM User_detail WHERE name = '%s' and grade = %d" # 이름과 학년을 변수를 넣어둔 쿼리문 / 이름은 '' 안에 들어있음
     curs.execute(user_id % (name, grade)) # 쿼리문에 name인자를 변수로 넣어줌
