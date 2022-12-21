@@ -1,12 +1,16 @@
 import socket
+import sys
 import login
+import userId
+import send
+import messages
 
 host = ''
 port = 9999
- 
+
 server_sock = socket.socket(socket.AF_INET)
 server_sock.bind((host, port))
-server_sock.listen(1)
+server_sock.listen(5)
  
 while True:
     print("기다리는 중")
@@ -15,12 +19,6 @@ while True:
     print('Connected by', addr)
     data1 = client_sock.recv(1024)
     data1 = data1.decode()
-
-    # index = data1.index("/")    
-
-    # data_id = data1[:index]
-    # data_pw = data1[index:]
-    # print(data_id, data_pw)
 
     while True:
         # 클라이언트에서 받을 문자열의 길이
@@ -37,17 +35,29 @@ while True:
 
         if "login" in msg: # 로그인을 하고자 할 때
             msg = msg.replace("login/", "")
-            print(msg)
-            index = msg.find("/")
-            id_data = msg[:index]
-            pw_data = msg[index+1:]
-            print(id_data, " ", pw_data)
+            msg = msg.split("/")
+            id = str(msg[0].replace('\'', ''))
+            pw = str(msg[1].replace('\'', '').strip())
 
-            check = str(login.checkIdPw(id_data, pw_data)) # 결과값을 인코딩해서 전달
+            check1 = str(login.checkIdPw(id, pw)) # 결과값을 인코딩해서 전달
+            print(check1)
             
-            client_sock.sendall(check.encode())
-            print(check)
-        
+            if check1 == "True":
+                user_id = userId.checkID(msg[0])
+            else:
+                user_id = None
+            client_sock.sendall(check1.encode())
 
-    client_sock.close()
-    server_sock.close()
+        if "send" in msg:
+            msg = msg.replace("send/", "")
+            msg = msg.split("/")
+            channel = int(msg[2].replace('\'', ''))
+            grade = int(msg[3].replace('\'', ''))
+            check2 = str(send.insertMsg(msg[0], msg[1], channel, grade, None, user_id))
+            client_sock.sendall(check2.encode())
+            print(check2)
+    
+        if "notice" in msg:
+            check3 = str(messages.findMessage(user_id, 1))
+            client_sock.sendall(check3.encode())
+            print(check3)
